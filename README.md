@@ -1,6 +1,6 @@
 # Pendo Resource Center Integration Kit
 
-The Pendo Resource Center provides an integration framework that allows third party developers to create applications that Pendo customers can activate in their web applications and provide to their users.
+The Pendo Resource Center provides an integration framework that allows third party developers to create applications that Pendo customers can activate and provide to their users.
 
 At a high level, an integration consists of a single JSON configuration file hosted by Pendo, and a web application (integration) hosted by the third party developer.  There is also a lightweight Javascript SDK (`pendo-extension-sdk`) that can be leveraged to communicate between the integration and the Pendo Resource Center to retrieve configuration information, invoke triggers, and listen for events from the Resource Center.
 
