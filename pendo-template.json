@@ -12,7 +12,7 @@
     "use": "launcher",
     "minAgentVersion": "2.13.0",
     "uri": "<INTEGRATION_URL>",
-    "tags": [<ARRAY_OF_STRINGS>],
+    "tags": ["<TAG>","<TAG>","<ETC>"],
     "description": "<INTEGRATION_DESCRIPTION",
     "helpUrl": "<INTEGRATION_HELP_URL>",
     "parameters": {
