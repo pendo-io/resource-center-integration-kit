@@ -1,1 +1,47 @@
-
+{
+    "name": "<UNIQUE_INTEGRATION_NAME>",
+    "author": {
+        "name": "<COMPANY_NAME",
+        "email": "<CONTACT_EMAIL>",
+        "url": "<COMPANY_URL>"
+    },
+    "allowedSubs": [],
+    "private": true,
+    "version": "0.1.0",
+    "type": "agent",
+    "use": "launcher",
+    "minAgentVersion": "2.13.0",
+    "uri": "<INTEGRATION_URL>",
+    "tags": [<ARRAY_OF_STRINGS>],
+    "description": "<INTEGRATION_DESCRIPTION",
+    "helpUrl": "<INTEGRATION_HELP_URL>",
+    "parameters": {
+        "providers": [{
+                "name": "<UNIQUE_INTEGRATION_NAME>",
+                "label": "<INTEGRATION_LABEL>",
+                "description": "<INTEGRATION_DESCRIPTION",
+                "media": {
+                    "default": "<IMAGE_URL>",
+                    "thumb": "<IMAGE_URL>",
+                    "screenshots": []
+                },
+                "brandColor": "<HEX_COLOR_VALUE>",
+                "comingSoon": false,
+                "options": []
+            }
+        ],
+        "options": [
+            {
+                "key": "provider.options.apiKey",
+                "type": "input",
+                "templateOptions": {
+                    "label": "API Key",
+                    "placeholder": "API Key",
+                    "group": "general",
+                    "subgroup": "provider",
+                    "required": true
+                }
+            }
+        ]
+    }
+}
