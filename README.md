@@ -56,13 +56,13 @@ Triggers are used to issue a command to the outer frame agent of the Resource Ce
  * triggers.resizeHeader - Takes integer argument of pixels to adjust the header height to. `0` hides the header.
 
     ```javascript
-    client.triggers.resizeHeader('10');
+    client.triggers.resizeHeader(10);
     ```
 
  * triggers.updateNotificationBadge - Takes an integer argument and updates the notification indicator on the Guide Center badge with the number passed in.
 
     ```javascript
-    client.triggers.updateNotificationBadge('3');
+    client.triggers.updateNotificationBadge(3);
     ```
 
  * content.zoom - Displays an image in a shadow box overlaying the parent web application according to the passed in configuration object. 
