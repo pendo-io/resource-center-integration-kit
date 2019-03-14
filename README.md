@@ -21,7 +21,7 @@ There are multiple ways to leverage the `pendo-extension-sdk` from your project.
 * You can reference the file from a `script` tag in your web application:
     
     ```html
-    <script src="https://pendo-io-extensions.storage.googleapis.com/sdk/0.1.0/js/pendo-extensions.sdk.js"></script>
+    <script src="https://pendo-io-extensions.storage.googleapis.com/sdk/0.1.0/js/pendo-extensions-sdk.js"></script>
     ```
 
 * You can install the NPM package:
