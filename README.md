@@ -15,7 +15,7 @@ There are multiple ways to leverage the `pendo-extension-sdk` from your project.
 * You can download the file and host it locally:
 
     ```bash
-    $ wget https://pendo-io-extensions.storage.googleapis.com/sdk/0.1.0/js/pendo-extensions.sdk.js
+    $ wget https://pendo-io-extensions.storage.googleapis.com/sdk/0.1.0/js/pendo-extensions-sdk.js
     ```
 
 * You can reference the file from a `script` tag in your web application:
