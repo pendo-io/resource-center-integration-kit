@@ -78,7 +78,7 @@ Triggers are used to issue a command to the outer frame agent of the Resource Ce
     client.trigger('resizeHeader', 10);
     ```
 
- * updateNotificationBadge - Takes an integer argument and updates the notification indicator on the Guide Center badge with the number passed in.
+ * updateNotificationBadge - Takes an integer argument and increments the notification indicator on the Guide Center badge by the number passed in.
 
     ```javascript
     client.trigger('updateNotificationBadge', 3);
@@ -88,22 +88,28 @@ Triggers are used to issue a command to the outer frame agent of the Resource Ce
 
    ```javascript
    client.trigger('content.zoom', {
-       type: 'IMG', // or 'PICTURE'
+       type: 'IMG',
        top: TopNumberOfPixels, // Integer value
-       left: LeftNumberOfPixels,
-       width: width, // of the target element
-       height: height, // of the target element
+       left: LeftNumberOfPixels, // Integer value
+       width: width, // of the target element, Integer value
+       height: height, // of the target element, Integer value
        src: src, // url of the image
        options: {
-           transitionDuration: NumMilliSecs,
-           margin: NumPixels
+           transitionDuration: NumMilliSecs, //Integer value
+           margin: NumPixels //Integer value
        }
    });
    ```
 
- * toggleLauncher
+ * toggleLauncher - show or hide the Resource Center
+    ```javascript
+    client.trigger('toggleLauncher');
+    ```
 
- * returnToMenu
+ * returnToMenu - return the user to the top level navigation of Resource Center
+    ```javascript
+    client.trigger('returnToMenu');
+    ```
 
    
 #### Listeners 
@@ -112,5 +118,16 @@ _(not currently implemented)_
 
 Listeners are used to set up a callback function in the extension app for whenever the events occur. Typically don't have arguments and the callbacks can be called many times.
 
- * events.onMenuItemClick
- * events.onToggleClick
+ * events.onMenuItemClick - invoked when menu item for this integration in Resource Center is clicked
+    ```javascript
+    client.listen('events.onMenuItemClick',
+        function() {...}
+    );
+    ```
+
+ * events.onToggleClick - invoked when the Resource Center is opened or closed
+    ```javascript
+    client.listen('events.onToggleClick',
+        function() {...}
+    );
+    ```
