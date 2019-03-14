@@ -49,26 +49,45 @@ client.get('extension.config').then((result) => {
 });
 ```
 
+#### Gets
+
+Gets will ask the outer frame agent of the Resource Center for information and return that data via a Promise. These typically don't require arguments.
+
+ * extension.config - retrieve customer-specific configuration information (e.g. API key)
+    ```javascript
+    client.get('extension.config').then((result) => {...}
+    ```
+    
+ * browser - retrieve browser environment information
+    ```javascript
+    client.get('browser').then((result) => {...}
+    ```
+
+ * metadata - return all agent metadata associated with the current visitor
+    ```javascript
+    client.get('metadata').then((result) => {...}
+    ```
+
 #### Triggers
 
 Triggers are used to issue a command to the outer frame agent of the Resource Center.
 
- * triggers.resizeHeader - Takes integer argument of pixels to adjust the header height to. `0` hides the header.
+ * resizeHeader - Takes integer argument of pixels to adjust the header height to. `0` hides the header.
 
     ```javascript
-    client.triggers.resizeHeader(10);
+    client.trigger('resizeHeader', 10);
     ```
 
- * triggers.updateNotificationBadge - Takes an integer argument and updates the notification indicator on the Guide Center badge with the number passed in.
+ * updateNotificationBadge - Takes an integer argument and updates the notification indicator on the Guide Center badge with the number passed in.
 
     ```javascript
-    client.triggers.updateNotificationBadge(3);
+    client.trigger('updateNotificationBadge', 3);
     ```
 
  * content.zoom - Displays an image in a shadow box overlaying the parent web application according to the passed in configuration object. 
 
    ```javascript
-   client.content.zoom({
+   client.trigger('content.zoom', {
        type: 'IMG', // or 'PICTURE'
        top: TopNumberOfPixels, // Integer value
        left: LeftNumberOfPixels,
@@ -82,43 +101,11 @@ Triggers are used to issue a command to the outer frame agent of the Resource Ce
    });
    ```
 
- * triggers.toggleLauncher
+ * toggleLauncher
 
- * triggers.returnToMenu
+ * returnToMenu
 
    
-
-#### Gets
-
-Gets will ask the outer frame agent of the Resource Center for information and return that data via a Promise. These typically don't require arguments.
-
- * browser 
-    * env - retrieve browser environment information
-    ```javascript
-    client.get('browser.env').then((result) => {...}
-    ```
-    * url - retrieve the current browser URL
-    ```javascript
-    client.get('browser.url').then((result) => {...}
-    ```
-
- * metadata - return all agent metadata associated with the current visitor
-    ```javascript
-    client.get('metadata').then((result) => {...}
-    ```
-
- * extension
-    * config - retrieve customer-specific configuration information (e.g. API key)
-    ```javascript
-    client.get('extension.config').then((result) => {...}
-    ```
-    * stylesheet - retrieve customer-specific stylesheet information
-    ```javascript
-    client.get('extension.stylesheet').then((result) => {...}
-    ```
-
-      
-
 #### Listeners 
 
 _(not currently implemented)_
