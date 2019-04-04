@@ -1,11 +1,11 @@
 {
     "name": "<UNIQUE_INTEGRATION_NAME>",
     "author": {
-        "name": "<COMPANY_NAME",
+        "name": "<COMPANY_NAME>",
         "email": "<CONTACT_EMAIL>",
         "url": "<COMPANY_URL>"
     },
-    "allowedSubs": [],
+    "allowedSubs": ["<PENDO_PROVIDED_IGNORE>"],
     "private": true,
     "version": "0.1.0",
     "type": "agent",
