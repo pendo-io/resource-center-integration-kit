@@ -13,13 +13,13 @@
     "minAgentVersion": "2.13.0",
     "uri": "<INTEGRATION_URL>",
     "tags": ["<PENDO_PROVIDED_IGNORE>"],
-    "description": "<INTEGRATION_DESCRIPTION",
+    "description": "<INTEGRATION_DESCRIPTION>",
     "helpUrl": "<INTEGRATION_HELP_URL>",
     "parameters": {
         "providers": [{
                 "name": "<UNIQUE_INTEGRATION_NAME>",
                 "label": "<INTEGRATION_LABEL>",
-                "description": "<INTEGRATION_DESCRIPTION",
+                "description": "<INTEGRATION_DESCRIPTION>",
                 "media": {
                     "default": "<IMAGE_URL>",
                     "thumb": "<IMAGE_URL>",
