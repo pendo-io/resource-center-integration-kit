@@ -31,7 +31,7 @@ The following code demonstrates retrieving configuration information associated 
 #### Initialization
 
 ```javascript
-const client = PendoSDK.getConnection("app-name");
+const client = PendoSDK.GetConnection("app-name");
 client.initialize();
 
 client.get('extension.config').then((result) => {
