@@ -41,6 +41,19 @@
                     "subgroup": "provider",
                     "required": true
                 }
+            },
+            {
+                "key": "options.stylesheet",
+                "type": "fileUpload",
+                "defaultValue": "",
+                "templateOptions": {
+                    "label": "Custom Stylesheet",
+                    "pattern": ".+.css$",
+                    "patternValidationMessage": "only .css file types are supported",
+                    "group": "advanced",
+                    "subgroup": "styles",
+                    "required": false
+                }
             }
         ]
     }
